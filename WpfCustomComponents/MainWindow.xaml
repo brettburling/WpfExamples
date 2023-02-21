@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfCustomComponents"
         xmlns:customControls ="clr-namespace:WpfCustomComponents.Controls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="300" Width="300"
+        Title="MainWindow" Height="400" Width="300"
         Background="{StaticResource windowBackground}">
     
     
@@ -17,6 +17,7 @@
         </Grid.ColumnDefinitions>
         
         <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
             <RowDefinition Height="1*"></RowDefinition>
             <RowDefinition Height="1*"></RowDefinition>
             <RowDefinition Height="1*"></RowDefinition>
@@ -44,6 +45,17 @@
                              Height="30" 
                              Grid.Row="2" 
                              />
+
+
+        
+        <!--Alternatively could be done with a style-->
+        <Button x:Name="styledButton" 
+                Grid.Row="3"  
+                Style="{StaticResource PrimaryButton}"
+                Width="100"
+                Height="20"
+                Content="Button"/>
+
 
 
 
