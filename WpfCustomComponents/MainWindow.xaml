@@ -1,0 +1,54 @@
+﻿<Window x:Class="WpfCustomComponents.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfCustomComponents"
+        xmlns:customControls ="clr-namespace:WpfCustomComponents.Controls"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="300"
+        Background="{StaticResource windowBackground}">
+    
+    
+    <Grid>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+
+        <customControls:ArcadisPrimaryButton x:Name="pbutton" 
+                             Content="Primary"
+                             Width="100"
+                             Height="20" Click="pbutton_Click" 
+                            />
+
+
+        <customControls:ArcadisSecondaryButton x:Name="sbutton" 
+                             Content="Secondary"             
+                             Width="100"
+                             Height="20" 
+                             Grid.Row="1" Click="sbutton_Click"
+                             />
+
+
+        <customControls:ArcadisComboBox x:Name="combo" 
+                             Width="200"
+                             Height="30" 
+                             Grid.Row="2" 
+                             />
+
+
+
+    </Grid>
+    
+    
+    
+</Window>

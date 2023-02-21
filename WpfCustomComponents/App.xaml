@@ -1,0 +1,42 @@
+﻿<Application x:Class="WpfCustomComponents.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WpfCustomComponents" 
+             xmlns:sys="clr-namespace:System;assembly=System.Runtime"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+
+
+        <Color x:Key="primary">#FFFFFF</Color>
+        <Color x:Key="primaryVariant">#F0F0F0</Color>
+        <Color x:Key="active">#E4610F</Color>
+        <Color x:Key="activeVariant">#EB894B</Color>
+        <Color x:Key="inactive">#868484</Color>
+        <Color x:Key="menuHighlight ">#F5F5F5</Color>
+        <Color x:Key="error ">#da291c</Color>
+
+
+        <!--brushes-->
+        <SolidColorBrush x:Key="windowBackground" Color="{StaticResource primaryVariant}"/>
+
+        <SolidColorBrush x:Key="primaryBackground" Color="{StaticResource active}"/>
+        <SolidColorBrush x:Key="primaryForeground" Color="white"/>
+        <SolidColorBrush x:Key="primaryBoarder" Color="{StaticResource active}"/>
+
+        
+        <SolidColorBrush x:Key="secondaryBackground" Color="white"/>
+        <SolidColorBrush x:Key="secondaryForeground" Color="{StaticResource active}"/>
+        <SolidColorBrush x:Key="secondaryBoarder" Color="{StaticResource active}"/>
+
+        
+        <SolidColorBrush x:Key="veryHigh" Color="#76232f"/>
+        <SolidColorBrush x:Key="high" Color="#da291c"/>
+        <SolidColorBrush x:Key="medium" Color="#ffd700"/>
+        <SolidColorBrush x:Key="low" Color="#509e2f"/>
+
+        <!--fonts-->
+        <FontFamily x:Key="primaryFontFamily">Arial</FontFamily>
+        <sys:Double x:Key="primaryFontSize">12</sys:Double>
+
+    </Application.Resources>
+</Application>

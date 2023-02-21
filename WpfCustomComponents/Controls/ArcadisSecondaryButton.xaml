@@ -1,0 +1,30 @@
+﻿<Button x:Class="WpfCustomComponents.Controls.ArcadisSecondaryButton"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="20" 
+             d:DesignWidth="100"    
+             MinWidth="75"
+             MinHeight="20"
+             Background="{StaticResource secondaryBackground}"
+             BorderThickness="1"
+             BorderBrush="{StaticResource secondaryBoarder}"
+             Foreground="{StaticResource secondaryForeground}"          
+             FontFamily="{StaticResource primaryFontFamily}" 
+             FontSize="{StaticResource primaryFontSize}" 
+             VerticalContentAlignment="Center"
+             HorizontalContentAlignment="Center">
+
+
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+                </Style>
+            </Button.Resources>
+
+
+
+</Button>
+
